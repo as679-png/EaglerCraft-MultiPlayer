@@ -1,0 +1,20 @@
+aliases:
+  applymoney:
+  - eco give $1-
+  delhome:
+  - sethomegui:delhome $1-
+  home:
+  - betterhomes:homes $1-
+  homes:
+  - betterhomes:homes $1-
+  kit:
+  - essentials:kit pvp $1-
+  sell:
+  - economyshopgui:sellgui $1-
+  - economyshopgui:sellall $1-
+  sethome:
+  - sethomegui:sethome $1-
+  wild:
+  - rtp $1-
+command-block-overrides: []
+ignore-vanilla-permissions: false

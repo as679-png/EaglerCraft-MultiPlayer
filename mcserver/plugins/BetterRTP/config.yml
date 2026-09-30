@@ -1,0 +1,7 @@
+Default:
+  MinRadius: 250
+  MaxRadius: 5000
+  Cooldown: 30
+  DisableWorlds:
+  - world_nether
+  - world_the_end

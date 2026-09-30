@@ -1,0 +1,4 @@
+max-homes: 12
+max_homes: 12
+default: 12
+home-limit: 12

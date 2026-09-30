@@ -1,0 +1,71 @@
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  delay-on-join-milliseconds: 0
+  scoreboards:
+    default:
+      title: '&6&lSURVIVAL &7| &eSMP'
+      lines:
+      - '&7&m-----------------------'
+      - '&fRank: &a%luckperms_primary_group_name%'
+      - '&fMoney: &e$%vault_eco_balance_formatted%'
+      - '&fPlaytime: &b%statistic_hours_played%h %statistic_minutes_played%m'
+      - '&7&m-----------------------'
+prevent-spectator-effect:
+  enabled: false
+debug: false
+use-online-uuid-in-tablist: true
+permission-refresh-interval: 1000
+compensate-for-packetevents-bug: false
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- Owner
+- Admin
+- Helper
+- default
+belowname-objective:
+  fancy-value-default: NPC
+  fancy-value: '&c%health%'
+  view-distance: 10
+  enabled: false
+placeholders:
+  register-tab-expansion: false
+  locale: en-US
+global-playerlist:
+  update-latency: false
+  enabled: false
+playerlist-objective:
+  title: TAB
+  value: ''
+  render-type: INTEGER
+  enabled: true
+config-version: 7
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true
+header-footer:
+  enabled: true
+  designs:
+    default:
+      display-condition: '%world%!=disabledworld'
+      header: []
+      footer: []
+proxy-support:
+  channel-name-suffix: custom
+  enabled: true
+bossbar:
+  enabled: false
+layout:
+  enabled: false
+mysql:
+  enabled: false
+per-world-playerlist:
+  enabled: false
+ping-spoof:
+  enabled: false
+scoreboard-teams:
+  enabled: true
+tablist-name-formatting:
+  enabled: false

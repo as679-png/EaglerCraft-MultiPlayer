@@ -1,0 +1,403 @@
+afk-list-name: none
+afk-timeout-commands: null
+allow-bulk-buy-sell: true
+allow-direct-hat: true
+allow-old-id-signs: false
+allow-selling-named-items: false
+allow-silent-join-quit: false
+allow-world-in-broadcastworld: true
+allowed-nicks-regex: "^[a-zA-Z_0-9\xA7]+$"
+auto-afk: 300
+auto-afk-timeout: -1
+backup:
+  always-run: false
+  interval: 30
+baltop-entry-limit: -1
+baltop-requirements:
+  minimum-balance: 0
+  minimum-playtime: 0
+binding-items-policy: keep
+broadcast-afk-message: true
+cancel-afk-on-chat: true
+cancel-afk-on-fish: true
+cancel-afk-on-interact: true
+cancel-afk-on-move: true
+change-displayname: true
+change-tab-complete-name: false
+chat:
+  format: <{DISPLAYNAME}> {MESSAGE}
+  group-formats: null
+  paper-chat-events: true
+  persist-shout: false
+  question-enabled: true
+  radius: 0
+  shout-default: false
+  world-aliases: null
+command-cooldown-persistence: true
+command-cooldowns: null
+command-costs: null
+compass-towards-home-perm: false
+confirm-home-overwrite: false
+currency-symbol: $
+currency-symbol-suffix: false
+custom-join-message: none
+custom-new-username-message: none
+custom-quit-message: none
+death-messages: true
+debug: false
+default-enabled-confirm-commands: null
+default-stack-size: -1
+delay-motd: 0
+disable-item-pickup-while-afk: false
+disabled-commands: null
+drop-items-if-full: false
+economy-log-enabled: false
+economy-log-update-enabled: false
+economy-log-uuids: false
+enabledSigns: null
+force-disable-teleport-safety: false
+force-safe-teleport-location: false
+freeze-afk-players: false
+gamemode-change-preserve-flying: false
+heal-cooldown: 60
+hide-displayname-in-vanish: true
+hide-join-quit-messages-above: -1
+hide-permissionless-help: true
+ignore-colors-in-max-nick-length: false
+is-water-safe: false
+item-spawn-blacklist: null
+jail-online-time: false
+kit-auto-equip: false
+kits:
+  pvp:
+    delay: 10
+    items:
+    - diamond_helmet 1
+    - diamond_chestplate 1
+    - diamond_leggings 1
+    - diamond_boots 1
+    - diamond_sword 1
+    - obsidian 64
+    - end_crystal 64
+    - respawn_anchor 64
+    - glowstone 64
+    - golden_apple 64
+last-message-reply-recipient: true
+last-message-reply-recipient-timeout: 180
+last-message-reply-vanished: false
+list:
+  Admins: owner admin
+log-command-block-commands: true
+log-console-commands: true
+login-attack-delay: 5
+mails-per-minute: 1000
+max-fly-speed: 0.8
+max-itemlore-lines: 10
+max-money: 10000000000000
+max-mute-time: -1
+max-nick-length: 16
+max-projectile-speed: 8
+max-tempban-time: -1
+max-walk-speed: 0.8
+message-colors:
+  primary: '#ffaa00'
+  secondary: '#ff5555'
+milk-bucket-easter-egg: true
+min-money: -10000
+minimum-pay-amount: 0.001
+mute-commands:
+- f
+- kittycannon
+near-radius: 200
+newbies:
+  announce-format: '&dWelcome {DISPLAYNAME}&d to the server!'
+  kit: tools
+  spawnpoint: newbies
+nick-blacklist: null
+nickname-prefix: '~'
+no-god-in-worlds: null
+non-ess-in-help: true
+notify-no-new-mail: true
+notify-player-of-mail-cooldown: 60
+npcs-in-balance-ranking: false
+ops-name-color: '4'
+overridden-commands: null
+oversized-stacksize: 64
+pastebin-createkit: false
+pay-excludes-ignore-list: false
+per-player-locale: false
+per-warp-permission: false
+permission-based-item-spawn: false
+player-commands:
+- afk
+- afk.auto
+- back
+- back.ondeath
+- balance
+- balance.others
+- balancetop
+- build
+- chat.color
+- chat.format
+- chat.shout
+- chat.question
+- clearinventory
+- compass
+- depth
+- getpos
+- geoip.show
+- help
+- helpop
+- home.others
+- ignore
+- info
+- itemdb
+- kit
+- kits.tools
+- list
+- mail
+- mail.send
+- me
+- motd
+- msg
+- msg.color
+- nick
+- near
+- pay
+- ping
+- protect
+- r
+- rules
+- renamehome
+- realname
+- seen
+- sell
+- setxmpp
+- signs.create.protection
+- signs.create.trade
+- signs.break.protection
+- signs.break.trade
+- signs.use.balance
+- signs.use.buy
+- signs.use.disposal
+- signs.use.enchant
+- signs.use.free
+- signs.use.gamemode
+- signs.use.heal
+- signs.use.info
+- signs.use.kit
+- signs.use.mail
+- signs.use.protection
+- signs.use.repair
+- signs.use.sell
+- signs.use.time
+- signs.use.trade
+- signs.use.warp
+- signs.use.weather
+- spawn
+- suicide
+- time
+- tpa
+- tpaccept
+- tpahere
+- tpdeny
+- warp
+- warp.list
+- world
+- worth
+- xmpp
+protect:
+  alert:
+    on-break: null
+    on-placement: LAVA,TNT,LAVA_BUCKET
+    on-use: LAVA_BUCKET
+  blacklist:
+    break: null
+    dispenser: null
+    piston: null
+    placement: LAVA,TNT,LAVA_BUCKET
+    usage: LAVA_BUCKET
+  creeper:
+    max-height: -1
+  disable:
+    build: true
+    contactdmg: false
+    drown: false
+    fall: false
+    firedmg: false
+    lavadmg: false
+    lightning: false
+    projectiles: false
+    pvp: false
+    suffocate: false
+    use: true
+    warn-on-build-disallow: true
+    weather:
+      lightning: false
+      storm: false
+      thunder: false
+    wither: false
+  prevent:
+    bed-explosion: false
+    creeper-blockdamage: false
+    creeper-explosion: false
+    creeper-itemdamage: false
+    creeper-playerdamage: false
+    ender-crystal-explosion: false
+    enderdragon-blockdamage: true
+    enderman-pickup: false
+    entitytarget: false
+    fire-spread: true
+    fireball-explosion: false
+    fireball-fire: false
+    fireball-itemdamage: false
+    fireball-playerdamage: false
+    flint-fire: false
+    lava-fire-spread: true
+    lava-flow: false
+    lava-itemdamage: false
+    lightning-fire-spread: true
+    portal-creation: false
+    ravager-thief: false
+    respawn-anchor-explosion: false
+    sheep-eat-grass: false
+    spawn:
+      bat: false
+      blaze: false
+      cave_spider: false
+      chicken: false
+      cow: false
+      creeper: false
+      ender_dragon: false
+      enderman: false
+      ghast: false
+      giant: false
+      horse: false
+      iron_golem: false
+      magma_cube: false
+      mushroom_cow: false
+      ocelot: false
+      phantom: false
+      pig: false
+      pig_zombie: false
+      sheep: false
+      silverfish: false
+      skeleton: false
+      slime: false
+      snowman: false
+      spider: false
+      squid: false
+      villager: false
+      witch: false
+      wither: false
+      wolf: false
+      zombie: false
+    tnt-explosion: false
+    tnt-itemdamage: false
+    tnt-minecart-explosion: false
+    tnt-minecart-itemdamage: false
+    tnt-minecart-playerdamage: false
+    tnt-playerdamage: false
+    transformation:
+      charged-creeper: false
+      drowned: false
+      mooshroom: false
+      villager: false
+      witch: false
+      zombie-pigman: false
+      zombie-villager: false
+    villager-death: false
+    water-bucket-flow: false
+    water-flow: false
+    windcharge-explosion: false
+    wither-blockreplace: false
+    wither-spawnexplosion: false
+    witherskull-explosion: false
+    witherskull-itemdamage: false
+    witherskull-playerdamage: false
+    zombie-door-break: false
+random-respawn-location: none
+random-spawn-location: none
+real-names-on-list: false
+register-back-in-listener: false
+remove-effects-on-heal: true
+remove-god-on-disconnect: false
+repair-enchanted: true
+reset-nick-on-name-change: false
+respawn-at-anchor: false
+respawn-at-home: false
+respawn-at-home-bed: true
+respawn-listener-priority: high
+safe-usermap-names: true
+sell-multipliers:
+  default: 1.0
+  double: 2.0
+  triple: 3.0
+send-fly-enable-on-join: true
+send-info-after-death: false
+sethome-multiple:
+  default: 12
+  staff: 10
+  vip: 5
+show-zero-baltop: true
+sign-use-per-second: 4
+skip-used-one-time-kits-from-kit-list: false
+sleep-ignores-afk-players: true
+sleep-ignores-vanished-player: true
+socialspy-commands:
+- action
+- describe
+- eaction
+- edescribe
+- email
+- eme
+- emsg
+- er
+- ereply
+- etell
+- ewhisper
+- m
+- mail
+- msg
+- pm
+- r
+- reply
+- t
+- tell
+- w
+- whisper
+socialspy-listen-muted-players: true
+socialspy-messages: true
+socialspy-uses-displaynames: true
+spawn-if-no-home: true
+spawn-join-listener-priority: high
+spawn-on-join: false
+spawnmob-limit: 10
+starting-balance: 0
+teleport-cooldown: 0
+teleport-delay: 0
+teleport-invulnerability: 4
+teleport-passenger-dismount: true
+teleport-safety: true
+teleport-to-center: true
+teleport-when-freed: back
+tpa-accept-cancellation: 120
+tpa-max-requests: 5
+tree-command-range-limit: 300
+unprotected-sign-names: null
+unsafe-enchantments: false
+update-bed-at-daytime: true
+update-check: true
+use-bukkit-permissions: true
+use-custom-server-full-message: true
+use-custom-whitelist-message: true
+use-nbt-serialization-in-createkit: false
+vanishing-items-policy: keep
+verbose-command-usages: true
+warn-on-smite: true
+world-change-fly-reset: true
+world-change-preserve-flying: true
+world-change-speed-reset: true
+world-home-permissions: false
+world-teleport-permissions: false
+world-time-permissions: false

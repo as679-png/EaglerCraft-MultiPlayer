@@ -1,0 +1,40 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 0:0:0:0:0:0:0:1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1790607852730
+  login: 1790606452539
+  kits:
+    pvp: 1790551301775
+money: '30001003084.829999999999996'
+logoutlocation:
+  world: 6d2c1754-e333-498f-b9fa-c0e6db618647
+  world-name: world
+  x: 6289.8766613416265
+  y: 72.0
+  z: -25.868902592726567
+  yaw: 30.9000244140625
+  pitch: 41.25000762939453
+last-account-name: SparklesOnTT
+lastlocation:
+  world: 6d2c1754-e333-498f-b9fa-c0e6db618647
+  world-name: world
+  x: 6349.7102452201325
+  y: 64.0
+  z: 6783.1732751469335
+  yaw: -145.64996337890625
+  pitch: 28.4999942779541

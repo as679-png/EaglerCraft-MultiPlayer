@@ -1,0 +1,153 @@
+[18:11:24] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[18:11:28] [ServerMain/INFO]: Loaded 1174 recipes
+[18:11:28] [ServerMain/INFO]: Loaded 1271 advancements
+[18:11:29] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[18:11:29] [Server thread/INFO]: Loading properties
+[18:11:29] [Server thread/INFO]: This server is running Paper version git-Paper-499 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 9de3f75 on ver/1.20.4)
+[18:11:30] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:11:30] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:11:31] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[18:11:31] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[18:11:31] [Server thread/INFO]: Default game type: SURVIVAL
+[18:11:31] [Server thread/INFO]: Generating keypair
+[18:11:32] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:11:32] [Server thread/INFO]: Using epoll channel type
+[18:11:32] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[18:11:32] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[18:11:35] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[18:11:42] [Server thread/WARN]: Legacy plugin BetterHomes v1.1.1 does not specify an api-version.
+[18:11:42] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.12.1-SNAPSHOT
+[18:11:42] [Server thread/INFO]: [ViaVersion] ViaVersion 5.12.1-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
+[18:11:43] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[18:11:43] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[18:11:44] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[18:11:44] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.71
+[18:11:45] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[18:11:45] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.12.1-SNAPSHOT
+[18:11:45] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[18:11:45] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.12.3
+[18:11:45] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v4.2.0
+[18:11:45] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
+[18:11:45] [Server thread/INFO]: [random_teleport-1.13] Loading server plugin random_teleport-1.13 v2.2
+[18:11:45] [Server thread/INFO]: [LPC] Loading server plugin LPC v3.7.2
+[18:11:45] [Server thread/INFO]: [TAB] Loading server plugin TAB v6.2.0
+[18:11:45] [Server thread/INFO]: [EconomyShopGUI] Loading server plugin EconomyShopGUI v7.3.1
+[18:11:45] [Server thread/INFO]: [BetterHomes] Loading server plugin BetterHomes v1.1.1
+[18:11:45] [Server thread/INFO]: [AuctionHouse] Loading server plugin AuctionHouse v3.7.1
+[18:11:45] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:11:45] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.71
+[18:11:45] [Server thread/INFO]:         __    
+[18:11:45] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.71
+[18:11:45] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[18:11:45] [Server thread/INFO]: 
+[18:11:46] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[18:11:46] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[18:11:46] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[18:11:47] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1615ms)
+[18:11:47] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[18:11:47] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[18:11:47] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[18:11:47] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[18:11:47] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[18:11:47] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.2.0
+[18:11:47] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:11:47] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:11:47] [Server thread/WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[18:11:47] [Server thread/WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[18:11:47] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:11:47] [Server thread/INFO]: Preparing level "world"
+[18:11:48] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[18:11:49] [Server thread/INFO]: Time elapsed: 789 ms
+[18:11:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[18:11:49] [Server thread/INFO]: Time elapsed: 127 ms
+[18:11:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[18:11:49] [Server thread/INFO]: Time elapsed: 233 ms
+[18:11:49] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.12.1-SNAPSHOT
+[18:11:49] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
+[18:11:49] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.12.1-SNAPSHOT
+[18:11:49] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.12.3
+[18:11:51] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[18:11:51] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.1
+[18:11:51] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[18:11:53] [Server thread/INFO]: [Essentials] Loaded 39094 items from items.json.
+[18:11:53] [Server thread/INFO]: [Essentials] Using locale en
+[18:11:53] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[18:11:53] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[18:11:53] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[18:11:53] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[18:11:53] [Server thread/INFO]: [random_teleport-1.13] Enabling random_teleport-1.13 v2.2
+[18:11:53] [Server thread/INFO]: [random_teleport-1.13] start
+[18:11:53] [Server thread/INFO]: [random_teleport-1.13] all biomes have been successfully uploaded and saved
+[18:11:53] [Server thread/INFO]: [random_teleport-1.13] The offset has been set: 0 0
+[18:11:53] [Server thread/INFO]: [LPC] Enabling LPC v3.7.2
+[18:11:53] [Server thread/INFO]: [TAB] Enabling TAB v6.2.0
+[18:11:54] [Server thread/INFO]: [TAB] Found NMS implementation: me.neznamy.tab.platforms.bukkit.v1_20_R3.NMSImplementationProvider
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholder-refresh-intervals: Missing configuration section "placeholder-refresh-intervals.default-refresh-interval" of type Integer, using default value 500.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.date-format" of type String, using default value dd.MM.yyyy.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-format" of type String, using default value [HH:mm:ss / h:mm a].
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] placeholders: Missing configuration section "placeholders.time-offset" of type Number, using default value 0.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Playerlist objective value is set to be empty, but the configured value must evaluate to a number. Using 0.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.fancy-value" of type String, using default value &7Ping: %ping%.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] playerlist-objective: Missing configuration section "playerlist-objective.disable-condition" of type String, using default value %world%=disabledworld.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.case-sensitive-sorting" of type Boolean, using default value true.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.sorting-types" of type List, using default value [].
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.enable-collision" of type Object, using default value true.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.invisible-nametags" of type Object, using default value false.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.can-see-friendly-invisibles" of type Boolean, using default value false.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] scoreboard-teams: Missing configuration section "scoreboard-teams.disable-condition" of type String, using default value %world%=disabledworld.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support: Missing configuration section "proxy-support.type" of type String, using default value PLUGIN.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.plugin: Missing configuration section "proxy-support.plugin.name" of type String, using default value RedisBungee.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.redis: Missing configuration section "proxy-support.redis.url" of type String, using default value redis://:password@localhost:6379/0.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.exchange" of type String, using default value plugin.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] [config.yml] proxy-support.rabbitmq: Missing configuration section "proxy-support.rabbitmq.url" of type String, using default value amqp://guest:guest@localhost:5672/%2F.
+[18:11:54] [Server thread/INFO]: [TAB] [WARN] Found a total of 18 issues.
+[18:11:54] [Server thread/INFO]: [TAB] Enabled in 756ms
+[18:11:54] [Server thread/INFO]: [EconomyShopGUI] Enabling EconomyShopGUI v7.3.1
+[18:11:55] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Initializing paper meta...
+[18:11:55] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Using lang-en.yml as language file
+[18:11:55] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Completed loading 16 section configs from /sections/
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Completed loading 16 shop configs from /shops/
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Updating Shop settings...
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Successfully hooked into Vault and using EssentialsX Economy as economy provider
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Completed loading 1 economy provider(s) for all 14 shop sections.
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Using minecraft version 1.20.4...
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Spawner provider set to AUTO in config
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Automatically searching for compatible spawner provider....
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Failed to automatically find compatible spawner provider, using default...
+[18:11:56] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: esgui [1.1.0]
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Debug mode is enabled.
+[18:11:56] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Loading all items...
+[18:11:58] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Initialized - Took 3229ms to complete
+[18:11:58] [Server thread/INFO]: [BetterHomes] Enabling BetterHomes v1.1.1*
+[18:11:58] [Server thread/INFO]: [BetterHomes] Better Homes enabled. Loaded 0 homes.
+[18:11:58] [Server thread/INFO]: [AuctionHouse] Enabling AuctionHouse v3.7.1
+[18:11:58] [Server thread/INFO]: [AuctionHouse] Found locale file en_us.json
+[18:11:58] [Server thread/WARN]: [AuctionHouse] A backup of the database has been saved with .backup extension.
+[18:11:58] [Server thread/INFO]: [AuctionHouse] Using NMS version v1_20_R3
+[18:11:58] [Server thread/INFO]: [AuctionHouse] Using en_us locale
+[18:11:58] [Server thread/INFO]: [AuctionHouse] Loaded 3 listings
+[18:11:58] [Server thread/WARN]: Could not register alias delhome because it contains commands that do not exist: sethomegui:delhome $1-
+[18:11:58] [Server thread/WARN]: Could not register alias sethome because it contains commands that do not exist: sethomegui:sethome $1-
+[18:11:59] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[18:11:59] [Server thread/INFO]: Running delayed init tasks
+[18:11:59] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[18:11:59] [Craft Scheduler Thread - 1 - Essentials/INFO]: [Essentials] Fetching version information...
+[18:11:59] [Server thread/INFO]: [AuctionHouse] Registered Service Provider Essentials for Vault's Economy API
+[18:11:59] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[18:11:59] [Server thread/INFO]: [AuctionHouse] Registered Service Provider LuckPerms for Vault's Chat API
+[18:11:59] [Server thread/INFO]: [AuctionHouse] Found PlaceholderAPI plugin
+[18:11:59] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: auctionhouse [3.7.1]
+[18:11:59] [Server thread/INFO]: [AuctionHouse] Registered PlaceholderAPI placeholders
+[18:11:59] [Server thread/INFO]: Done (30.060s)! For help, type "help"
+[18:11:59] [Server thread/INFO]: Timings Reset
+[18:11:59] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] Checking for Updates ... 
+[18:11:59] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: vault [1.8.3]
+[18:11:59] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[18:11:59] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.2]
+[18:11:59] [Server thread/INFO]: 3 placeholder hook(s) registered!
+[18:11:59] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] No new version available
+[18:11:59] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] There is a new EssentialsX version available for download: 2.22.0.
+[18:11:59] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html?branch=stable
+[18:11:59] [Server thread/INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.

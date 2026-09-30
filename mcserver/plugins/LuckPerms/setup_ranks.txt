@@ -1,0 +1,40 @@
+lp creategroup member
+lp creategroup moderator
+lp creategroup developer
+lp creategroup owner
+
+lp group default parent add member
+lp group moderator parent add member
+lp group developer parent add moderator
+lp group admin parent add moderator
+lp group owner parent add admin
+
+lp group member permission set essentials.kit true
+lp group member permission set essentials.kits.pvp true
+lp group member permission set betterhomes.use true
+lp group member permission set betterhomes.sethome true
+lp group member permission set betterhomes.home true
+lp group member permission set betterhomes.gui true
+
+lp group moderator permission set essentials.ban true
+lp group moderator permission set essentials.tempban true
+lp group moderator permission set essentials.unban true
+lp group moderator permission set essentials.kick true
+
+lp group developer permission set essentials.eco true
+lp group developer permission set luckperms.* true
+
+lp group admin permission set essentials.eco true
+lp group admin permission set luckperms.* true
+
+lp group owner permission set * true
+
+lp group member meta setprefix "&8[&aMember&8] "
+lp group moderator meta setprefix "&8[&bMod&8] "
+lp group developer meta setprefix "&8[&dDev&8] "
+lp group admin meta setprefix "&8[&cAdmin&8] "
+lp group owner meta setprefix "&8[&4Owner&8] "
+
+lp user SparklesOnTT parent add owner
+lp user SparklesOnTT parent add admin
+lp user SparklesOnTT parent add developer

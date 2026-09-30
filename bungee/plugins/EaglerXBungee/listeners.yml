@@ -1,0 +1,4 @@
+listeners:
+  default:
+    address: '0.0.0.0:8081'
+    inject_address: '127.0.0.1:25577'
