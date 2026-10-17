@@ -385,7 +385,7 @@ tpa-accept-cancellation: 120
 tpa-max-requests: 5
 tree-command-range-limit: 300
 unprotected-sign-names: null
-unsafe-enchantments: false
+unsafe-enchantments: true
 update-bed-at-daytime: true
 update-check: true
 use-bukkit-permissions: true

@@ -797,3 +797,948 @@ javax.imageio.IIOException: Can't read input file!
 14:40:49 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
 15:04:12 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
 15:04:12 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+14:10:28 [INFO] Using mbed TLS based native cipher.
+14:10:28 [INFO] Using zlib based native compressor.
+14:10:28 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+14:10:28 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+14:10:28 [INFO] Epoll is working, utilising it!
+14:10:28 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+14:10:28 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+14:10:28 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+14:10:28 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+14:10:28 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+14:10:28 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+14:10:28 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:28 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:29 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:29 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+14:10:29 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+14:10:29 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+14:10:30 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+14:10:30 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+14:10:30 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:30 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:30 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:30 [WARNING] Forced host server pvp is not defined
+14:10:30 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:30 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:30 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:30 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+14:10:30 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+14:10:30 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+14:10:31 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+14:10:31 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:31 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:31 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+14:10:31 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x208552f9, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+14:10:31 [INFO] Listening on /0.0.0.0:25577
+14:10:32 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+14:12:08 [INFO] [/[0:0:0:0:0:0:0:1]:37606] <-> InitialHandler has connected
+14:12:09 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+14:19:15 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+14:19:15 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+14:22:47 [INFO] [/[0:0:0:0:0:0:0:1]:38374] <-> InitialHandler has connected
+14:22:47 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+15:09:47 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+15:09:47 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+15:11:54 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:57290] <-> InitialHandler has connected
+15:11:54 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+15:55:20 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+15:55:20 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+17:53:16 [INFO] Using mbed TLS based native cipher.
+17:53:16 [INFO] Using zlib based native compressor.
+17:53:16 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+17:53:16 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+17:53:17 [INFO] Epoll is working, utilising it!
+17:53:17 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+17:53:17 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+17:53:17 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+17:53:17 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+17:53:17 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+17:53:17 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+17:53:18 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:18 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:18 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:19 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+17:53:19 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+17:53:19 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+17:53:20 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+17:53:20 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+17:53:20 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:20 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:20 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:20 [WARNING] Forced host server pvp is not defined
+17:53:20 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:20 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:20 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:20 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+17:53:20 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+17:53:22 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+17:53:22 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+17:53:22 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:22 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:22 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:53:22 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0xf18eb49e, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+17:53:22 [INFO] Listening on /0.0.0.0:25577
+17:53:24 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+17:57:34 [INFO] Closing listener [id: 0xf18eb49e, L:/[0:0:0:0:0:0:0:0]:25577]
+17:57:34 [INFO] Closing pending connections
+17:57:34 [INFO] Disconnecting 0 connections
+17:57:34 [INFO] Saving reconnect locations
+17:57:34 [INFO] Disabling plugins
+17:57:34 [INFO] [EaglercraftXServer] Disabling EaglercraftXServer 1.1.1...
+17:57:34 [INFO] [EaglercraftXServer] Disconnecting from skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+17:57:34 [INFO] [EaglercraftXServer] Disconnected from skin cache database successfully!
+17:57:34 [INFO] Closing IO threads
+17:59:11 [INFO] Using mbed TLS based native cipher.
+17:59:11 [INFO] Using zlib based native compressor.
+17:59:11 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+17:59:11 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+17:59:11 [INFO] Epoll is working, utilising it!
+17:59:12 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+17:59:12 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+17:59:12 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+17:59:12 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+17:59:12 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+17:59:12 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+17:59:12 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:12 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:12 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:13 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+17:59:13 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+17:59:13 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+17:59:14 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+17:59:14 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+17:59:14 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:14 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:14 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:14 [WARNING] Forced host server pvp is not defined
+17:59:14 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:14 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:14 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:14 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+17:59:14 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+17:59:15 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+17:59:15 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+17:59:15 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:15 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:15 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:59:15 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0xb0eede8a, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+17:59:15 [INFO] Listening on /0.0.0.0:25577
+17:59:17 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+12:41:56 [INFO] Using mbed TLS based native cipher.
+12:41:56 [INFO] Using zlib based native compressor.
+12:41:56 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+12:41:56 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+12:41:56 [INFO] Epoll is working, utilising it!
+12:41:56 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+12:41:56 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+12:41:56 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+12:41:56 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+12:41:56 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+12:41:56 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+12:41:57 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:57 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:57 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:57 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+12:41:57 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+12:41:57 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+12:41:57 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+12:41:58 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+12:41:58 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:58 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:58 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:58 [WARNING] Forced host server pvp is not defined
+12:41:58 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:58 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:58 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:58 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+12:41:58 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+12:41:58 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+12:41:58 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+12:41:58 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:58 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:58 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:41:58 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x3d9017be, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+12:41:58 [INFO] Listening on /0.0.0.0:25577
+12:42:00 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+13:42:48 [INFO] Using mbed TLS based native cipher.
+13:42:48 [INFO] Using zlib based native compressor.
+13:42:48 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+13:42:48 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+13:42:48 [INFO] Epoll is working, utilising it!
+13:42:48 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+13:42:48 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+13:42:48 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+13:42:48 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+13:42:48 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+13:42:48 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+13:42:48 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:48 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:48 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:49 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+13:42:49 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+13:42:49 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+13:42:50 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+13:42:50 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+13:42:50 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:50 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:50 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:50 [WARNING] Forced host server pvp is not defined
+13:42:50 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:50 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:50 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:50 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+13:42:50 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+13:42:51 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+13:42:51 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+13:42:51 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:51 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:51 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+13:42:52 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0xd0a7238d, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+13:42:52 [INFO] Listening on /0.0.0.0:25577
+13:42:54 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+13:44:23 [INFO] [/[0:0:0:0:0:0:0:1]:41132] <-> InitialHandler has connected
+13:44:23 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+13:53:24 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+13:53:24 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+15:17:38 [INFO] Using mbed TLS based native cipher.
+15:17:38 [INFO] Using zlib based native compressor.
+15:17:38 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+15:17:39 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+15:17:39 [INFO] Epoll is working, utilising it!
+15:17:39 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+15:17:39 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+15:17:39 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+15:17:39 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+15:17:39 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+15:17:39 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+15:17:40 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:40 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:40 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:40 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+15:17:40 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+15:17:41 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+15:17:42 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+15:17:43 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+15:17:43 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:43 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:43 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:43 [WARNING] Forced host server pvp is not defined
+15:17:43 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:43 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:43 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:43 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+15:17:43 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+15:17:44 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+15:17:44 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+15:17:44 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:44 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:44 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:17:44 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x878587c9, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+15:17:44 [INFO] Listening on /0.0.0.0:25577
+15:17:46 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+15:19:54 [INFO] [/[0:0:0:0:0:0:0:1]:53524] <-> InitialHandler has connected
+15:19:54 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+15:32:33 [WARNING] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] - read timed out
+15:32:33 [INFO] [SparklesOnTT] disconnected with: §f§fReadTimeoutException : null
+15:32:33 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+15:32:33 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+15:32:51 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:32826] <-> InitialHandler has connected
+15:32:51 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+15:39:36 [WARNING] [SparklesOnTT] -> UpstreamBridge - read timed out
+15:39:36 [INFO] [SparklesOnTT] disconnected with: §f§fReadTimeoutException : null
+15:39:36 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+15:39:36 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+15:44:43 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:59248] <-> InitialHandler has connected
+15:44:43 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+16:27:24 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+16:27:24 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+18:02:01 [INFO] Using mbed TLS based native cipher.
+18:02:01 [INFO] Using zlib based native compressor.
+18:02:01 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+18:02:01 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+18:02:01 [INFO] Epoll is working, utilising it!
+18:02:01 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+18:02:01 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+18:02:01 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+18:02:01 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+18:02:01 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+18:02:01 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+18:02:02 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:02 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:02 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:02 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+18:02:02 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+18:02:03 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+18:02:04 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+18:02:04 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+18:02:04 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:04 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:04 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:04 [WARNING] Forced host server pvp is not defined
+18:02:04 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:04 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:04 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:04 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+18:02:04 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+18:02:05 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+18:02:05 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+18:02:05 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:05 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:05 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+18:02:05 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x1cd3d763, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+18:02:05 [INFO] Listening on /0.0.0.0:25577
+18:02:07 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+18:03:15 [INFO] [/[0:0:0:0:0:0:0:1]:51340] <-> InitialHandler has connected
+18:03:15 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+18:30:56 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+18:30:56 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+20:54:51 [INFO] Using mbed TLS based native cipher.
+20:54:51 [INFO] Using zlib based native compressor.
+20:54:51 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+20:54:51 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+20:54:51 [INFO] Epoll is working, utilising it!
+20:54:51 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+20:54:51 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+20:54:51 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+20:54:51 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+20:54:51 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+20:54:51 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+20:54:52 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:52 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:52 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:53 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+20:54:53 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+20:54:53 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+20:54:54 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+20:54:54 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+20:54:54 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:54 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:54 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:54 [WARNING] Forced host server pvp is not defined
+20:54:54 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:54 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:54 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:54 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+20:54:54 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+20:54:55 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+20:54:55 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+20:54:55 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:55 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:55 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+20:54:55 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0xc70ccca2, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+20:54:55 [INFO] Listening on /0.0.0.0:25577
+20:54:58 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+20:56:08 [INFO] [/[0:0:0:0:0:0:0:1]:46796] <-> InitialHandler has connected
+20:56:09 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+21:13:25 [WARNING] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] - read timed out
+21:13:25 [INFO] [SparklesOnTT] disconnected with: §f§fReadTimeoutException : null
+21:13:25 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+21:13:25 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+21:21:11 [INFO] Closing listener [id: 0xc70ccca2, L:/[0:0:0:0:0:0:0:0]:25577]
+21:21:11 [INFO] Closing pending connections
+21:21:11 [INFO] Disconnecting 0 connections
+21:21:11 [SEVERE] Exception in thread "main" 
+21:21:11 [INFO] [EaglercraftXServer] Disabling EaglercraftXServer 1.1.1...
+21:59:58 [INFO] Using mbed TLS based native cipher.
+21:59:58 [INFO] Using zlib based native compressor.
+21:59:58 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+21:59:58 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+21:59:59 [INFO] Epoll is working, utilising it!
+21:59:59 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+21:59:59 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+21:59:59 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+21:59:59 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+21:59:59 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+21:59:59 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+21:59:59 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+21:59:59 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+21:59:59 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:00 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+22:00:00 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+22:00:00 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+22:00:01 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+22:00:01 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+22:00:01 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:01 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:01 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:01 [WARNING] Forced host server pvp is not defined
+22:00:01 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:01 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:01 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:02 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+22:00:02 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+22:00:02 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+22:00:02 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+22:00:02 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:02 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:02 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+22:00:02 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x4782d5b2, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+22:00:02 [INFO] Listening on /0.0.0.0:25577
+22:00:05 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+22:00:44 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:46970] <-> InitialHandler has connected
+22:00:45 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+22:00:54 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+22:00:58 [INFO] [/[0:0:0:0:0:0:0:1]:48078] <-> InitialHandler has connected
+22:00:58 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+22:00:59 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+22:01:02 [WARNING] [SparklesOnTT] No client connected for pending server!
+22:01:02 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has disconnected
+22:01:02 [WARNING] [SparklesOnTT] No client connected for pending server!
+22:01:02 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has disconnected
+22:01:10 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:52386] <-> InitialHandler has connected
+22:01:10 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+23:00:39 [INFO] Using mbed TLS based native cipher.
+23:00:39 [INFO] Using zlib based native compressor.
+23:00:39 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+23:00:39 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+23:00:39 [INFO] Epoll is working, utilising it!
+23:00:39 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+23:00:39 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+23:00:39 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+23:00:39 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+23:00:39 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+23:00:39 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+23:00:40 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:40 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:40 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:41 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+23:00:41 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+23:00:41 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+23:00:42 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+23:00:42 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+23:00:42 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:42 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:42 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:42 [WARNING] Forced host server pvp is not defined
+23:00:42 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:42 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:42 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:42 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+23:00:42 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+23:00:43 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+23:00:43 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+23:00:43 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:43 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:43 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+23:00:44 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0xe6f7f212, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+23:00:44 [INFO] Listening on /0.0.0.0:25577
+23:00:46 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+23:04:17 [INFO] [/[0:0:0:0:0:0:0:1]:44888] <-> InitialHandler has connected
+23:04:17 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+00:25:04 [INFO] Using mbed TLS based native cipher.
+00:25:04 [INFO] Using zlib based native compressor.
+00:25:04 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+00:25:04 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+00:25:04 [INFO] Epoll is working, utilising it!
+00:25:04 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+00:25:04 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+00:25:04 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+00:25:04 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+00:25:04 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+00:25:04 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+00:25:05 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:05 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:05 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:05 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+00:25:05 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+00:25:06 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+00:25:06 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+00:25:07 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+00:25:07 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:07 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:07 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:07 [WARNING] Forced host server pvp is not defined
+00:25:07 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:07 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:07 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:07 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+00:25:07 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+00:25:07 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+00:25:08 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+00:25:08 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:08 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:08 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+00:25:08 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x2f721d92, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+00:25:08 [INFO] Listening on /0.0.0.0:25577
+00:25:11 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+00:28:00 [INFO] [/[0:0:0:0:0:0:0:1]:49638] <-> InitialHandler has connected
+00:28:00 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+00:45:18 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+00:45:18 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+12:33:55 [INFO] Using mbed TLS based native cipher.
+12:33:55 [INFO] Using zlib based native compressor.
+12:33:55 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+12:33:55 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+12:33:55 [INFO] Epoll is working, utilising it!
+12:33:56 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+12:33:56 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+12:33:56 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+12:33:56 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+12:33:56 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+12:33:56 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+12:33:56 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:56 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:56 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:57 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+12:33:57 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+12:33:57 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+12:33:57 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+12:33:58 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+12:33:58 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:58 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:58 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:58 [WARNING] Forced host server pvp is not defined
+12:33:58 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:58 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:58 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:58 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+12:33:58 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+12:33:59 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+12:33:59 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+12:33:59 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:59 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:59 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+12:33:59 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x22f5731d, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+12:33:59 [INFO] Listening on /0.0.0.0:25577
+12:34:01 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+12:34:46 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:40558] <-> InitialHandler has connected
+12:34:47 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+12:34:53 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+12:34:54 [INFO] [/[0:0:0:0:0:0:0:1]:37294] <-> InitialHandler has connected
+12:34:54 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+12:35:02 [WARNING] [SparklesOnTT] No client connected for pending server!
+12:35:02 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has disconnected
+12:41:19 [INFO] [SparklesOnTT] disconnected with: §fInternal Exception: io.netty.handler.codec.DecoderException: java.lang.IllegalStateException: zip file closed
+12:41:19 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+12:41:19 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+12:41:22 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:46108] <-> InitialHandler has connected
+12:41:22 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+12:41:39 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+12:41:39 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+14:10:19 [INFO] Using mbed TLS based native cipher.
+14:10:19 [INFO] Using zlib based native compressor.
+14:10:19 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+14:10:19 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+14:10:19 [INFO] Epoll is working, utilising it!
+14:10:20 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+14:10:20 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+14:10:20 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+14:10:20 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+14:10:20 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+14:10:20 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+15:39:39 [INFO] Using mbed TLS based native cipher.
+15:39:39 [INFO] Using zlib based native compressor.
+15:39:39 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+15:39:39 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+15:39:39 [INFO] Epoll is working, utilising it!
+15:39:39 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+15:39:39 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+15:39:39 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+15:39:39 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+15:39:39 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+15:39:39 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+15:39:40 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:40 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:40 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:42 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+15:39:42 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+15:39:42 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+15:39:43 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+15:39:43 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+15:39:43 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:43 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:43 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:43 [WARNING] Forced host server pvp is not defined
+15:39:43 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:43 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:43 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:43 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+15:39:44 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+15:39:45 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+15:39:45 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+15:39:45 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:45 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:45 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:39:45 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x316d60ab, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+15:39:45 [INFO] Listening on /0.0.0.0:25577
+15:39:47 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+15:42:00 [INFO] [/[0:0:0:0:0:0:0:1]:59350] <-> InitialHandler has connected
+15:42:00 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+15:47:48 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+15:47:48 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+15:49:20 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:49234] <-> InitialHandler has connected
+15:49:20 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+15:56:54 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+15:56:54 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+17:35:16 [INFO] Using mbed TLS based native cipher.
+17:35:16 [INFO] Using zlib based native compressor.
+17:35:16 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+17:35:16 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+17:35:16 [INFO] Epoll is working, utilising it!
+17:35:17 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+17:35:17 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+17:35:17 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+17:35:17 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+17:35:17 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+17:35:17 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+17:35:17 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:17 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:17 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:18 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+17:35:18 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+17:35:18 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+17:35:19 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+17:35:19 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+17:35:19 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:19 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:19 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:19 [WARNING] Forced host server pvp is not defined
+17:35:19 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:19 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:19 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:19 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+17:35:19 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+17:35:20 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+17:35:20 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+17:35:20 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:20 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:20 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:35:20 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x995359b6, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+17:35:20 [INFO] Listening on /0.0.0.0:25577
+17:35:23 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+17:36:14 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:33750] <-> InitialHandler has connected
+17:36:15 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+17:36:23 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+17:36:28 [WARNING] [SparklesOnTT] No client connected for pending server!
+17:36:28 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has disconnected
+17:36:31 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:53598] <-> InitialHandler has connected
+17:36:31 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+17:49:15 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+17:49:15 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+17:51:06 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:59582] <-> InitialHandler has connected
+17:51:06 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+18:30:15 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+18:30:15 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+15:56:02 [INFO] Using mbed TLS based native cipher.
+15:56:02 [INFO] Using zlib based native compressor.
+15:56:02 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+15:56:02 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+15:56:02 [INFO] Epoll is working, utilising it!
+15:56:02 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+15:56:02 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+15:56:02 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+15:56:02 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+15:56:02 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+15:56:02 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+15:56:03 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:03 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:03 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:03 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+15:56:03 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+15:56:04 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+15:56:04 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+15:56:04 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+15:56:04 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:04 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:04 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:04 [WARNING] Forced host server pvp is not defined
+15:56:04 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:05 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:05 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:05 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+15:56:05 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+15:56:05 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+15:56:06 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+15:56:06 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:06 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:06 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+15:56:06 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0xc1eebe93, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+15:56:06 [INFO] Listening on /0.0.0.0:25577
+15:56:08 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+15:56:38 [INFO] [/[0:0:0:0:0:0:0:1]:54886] <-> InitialHandler has connected
+15:56:38 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+15:56:39 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:54892] <-> InitialHandler has connected
+15:56:39 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+15:56:41 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+15:56:44 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:57718] <-> InitialHandler has connected
+15:56:44 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+15:56:54 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+15:56:56 [WARNING] [SparklesOnTT] No client connected for pending server!
+15:56:56 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has disconnected
+15:56:56 [WARNING] [SparklesOnTT] No client connected for pending server!
+15:56:56 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has disconnected
+15:56:57 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:57526] <-> InitialHandler has connected
+15:56:57 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+16:26:05 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+16:26:05 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected
+17:54:18 [INFO] Using mbed TLS based native cipher.
+17:54:18 [INFO] Using zlib based native compressor.
+17:54:18 [INFO] Enabled BungeeCord version git:BungeeCord-Bootstrap:26.1-R0.1-SNAPSHOT:502ca71:2096
+17:54:18 [INFO] Not on Windows, attempting to use enhanced EpollEventLoop
+17:54:18 [INFO] Epoll is working, utilising it!
+17:54:18 [INFO] Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+17:54:18 [INFO] Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+17:54:18 [INFO] Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+17:54:18 [INFO] Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+17:54:18 [INFO] Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+17:54:18 [INFO] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+17:54:19 [INFO] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:19 [INFO] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:19 [INFO] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:19 [INFO] [EaglercraftXServer] Loading EaglercraftXServer 1.1.1...
+17:54:19 [INFO] [EaglercraftXServer] (Platform: BungeeCord)
+17:54:19 [INFO] [EaglercraftXServer] Server Name: "EaglercraftXServer"
+17:54:20 [SEVERE] [EaglercraftXServer] Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1264)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112)
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355)
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339)
+	at net.lax1dude.eaglercraft.backend.server.bungee.PlatformPluginBungee.onLoad(PlatformPluginBungee.java:229)
+	at net.md_5.bungee.api.plugin.PluginManager.enablePlugin(PluginManager.java:363)
+	at net.md_5.bungee.api.plugin.PluginManager.loadPlugins(PluginManager.java:269)
+	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:289)
+	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:69)
+	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+17:54:21 [INFO] Loaded plugin EaglercraftXServer version 1.1.1 by lax1dude
+17:54:21 [INFO] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:21 [INFO] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:21 [INFO] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:21 [WARNING] Forced host server pvp is not defined
+17:54:21 [INFO] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:21 [INFO] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:21 [INFO] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:21 [INFO] [EaglercraftXServer] Enabling EaglercraftXServer 1.1.1...
+17:54:21 [INFO] [EaglercraftXServer] Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+17:54:23 [INFO] [EaglercraftXServer] Connected to skin cache database successfully!
+17:54:23 [INFO] Enabled plugin EaglercraftXServer version 1.1.1 by lax1dude
+17:54:23 [INFO] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:23 [INFO] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:23 [INFO] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:502ca71:2096 by SpigotMC
+17:54:23 [INFO] [EaglercraftXServer] Listener "listener0" injected into channel [id: 0x59b52978, L:/[0:0:0:0:0:0:0:0]:25577] successfully (Generic Netty method)
+17:54:23 [INFO] Listening on /0.0.0.0:25577
+17:54:25 [INFO] [EaglercraftXServer] You are running the latest version of EaglerXServer
+17:55:10 [INFO] [/[0:0:0:0:0:0:0:1]:37706] <-> InitialHandler has connected
+17:55:11 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+17:55:19 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+17:55:26 [WARNING] [SparklesOnTT] No client connected for pending server!
+17:55:26 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has disconnected
+17:58:06 [INFO] [SparklesOnTT,/[0:0:0:0:0:0:0:1]:59616] <-> InitialHandler has connected
+17:58:06 [INFO] [SparklesOnTT] <-> ServerConnector [lobby] has connected
+18:26:38 [INFO] [SparklesOnTT] -> UpstreamBridge has disconnected
+18:26:38 [INFO] [SparklesOnTT] <-> DownstreamBridge <-> [lobby] has disconnected

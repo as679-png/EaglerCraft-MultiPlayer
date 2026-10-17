@@ -1,0 +1,30 @@
+players:
+  dfc8b491-1ff4-3def-8a73-7fcfdcde365a:
+    homes:
+      '0':
+        key: spawn
+        name: spawn
+        world: world
+        x: 0.44638935359289544
+        y: 75.0
+        z: 0.31819422891822496
+        yaw: 98.84992
+        pitch: 84.90002
+        created-at: 1791905777950
+        updated-at: 1791905797619
+        public: true
+        shared-with: []
+      '1':
+        key: home
+        name: home
+        world: world
+        x: 3934.164695024357
+        y: 70.0
+        z: -497.4179998116592
+        yaw: -79.94971
+        pitch: 32.399994
+        created-at: 1791395352102
+        updated-at: 1791395352102
+        public: false
+        shared-with: []
+    name: SparklesOnTT

@@ -1,0 +1,26 @@
+command /getthunderaxe [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+            
+        give 1 diamond axe named "&e&lARES THUNDER AXE" to {_target}
+        set durability of {_target}'s tool to 5
+        enchant {_target}'s tool with sharpness 5
+        enchant {_target}'s tool with unbreaking 3
+        set lore of {_target}'s tool to "&7&m--------------------------||&7Type: &e&lCustom Weapon Skin||&7Rarity: &5&lMYTHIC||&f||&e&l[SPECIAL ABILITY]||&7» Strikes lightning on swing!||&7&m--------------------------"
+
+on left click:
+    if name of player's tool is "&e&lARES THUNDER AXE":
+        set {_waited} to difference between {thunderaxe::cooldown::%player%} and now
+        if {_waited} is less than 3 seconds:
+            send "&c&l[COOLDOWN] &7Wait %difference between 3 seconds and {_waited}%." to player
+            stop
+            
+        set {_target} to targeted block
+        if {_target} is air:
+            set {_target} to block 30 blocks in front of player
+            
+        strike lightning at {_target}
+        set {thunderaxe::cooldown::%player%} to now

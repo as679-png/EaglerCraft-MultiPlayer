@@ -1,0 +1,56 @@
+# =========================================================================
+# COMMAND: GIVE THE MOB SUMMONER WAND
+# =========================================================================
+command /getmobsummoner [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+            
+        give 1 blaze rod named "&a&lMOB SUMMONER" to {_target}
+        
+        # 1.8.8 Custom Skin Durability Hook
+        set durability of {_target}'s tool to 5
+        
+        set lore of {_target}'s tool to "&7&m--------------------------||&7Type: &a&lCustom Weapon Skin||&7Rarity: &5&lMYTHIC||&f||&a&l[SPECIAL ABILITY]||&7» Right-click to shoot a zombie||&7   projectile that you can fight!||&7» &b&lINFINITE DURABILITY||&7&m--------------------------"
+        send "&a[Special Items] &aYou received the Mob Summoner!" to {_target}
+
+# =========================================================================
+# ENGINE: MOB PROJECTILE ENGINE (Triggers on Right-Click)
+# =========================================================================
+on right click:
+    if name of player's tool is "&a&lMOB SUMMONER":
+        cancel event
+        
+        # 1. Cooldown System (Prevents entity spam crashes)
+        set {_waited} to difference between {mobsummoner::cooldown::%player's uuid%} and now
+        if {_waited} is less than 1.5 seconds:
+            send "&c&l[COOLDOWN] &7Summoner is reloading! Wait %difference between 1.5 seconds and {_waited}%." to player
+            stop
+            
+        set {mobsummoner::cooldown::%player's uuid%} to now
+        
+        # 2. Shoot a native snowball to handle the direction and physics speed vectors automatically
+        shoot a snowball from player at speed 1.5
+        
+        # 3. Spawn a live Zombie right on top of the projectile entity slot
+        spawn a zombie at shot projectile
+        
+        # 4. Apply upward force to the newly spawned target to simulate a launching arc
+        push last spawned zombie up with force 0.4
+        
+        # 5. Play audio chimes via native console execution
+        set {_x} to x-coord of player
+        set {_y} to y-coord of player
+        set {_z} to z-coord of player
+        execute console command "playsound mob.zombie.say @a %{_x}% %{_y}% %{_z}% 1.0 1.5"
+        
+        send "&a&l[SUMMONED] &fLaunched a zombie battle target!" to player
+
+# =========================================================================
+# PROTECTION LAYER: Lock Custom Durability Texture State
+# =========================================================================
+on item damage:
+    if name of player's tool is "&a&lMOB SUMMONER":
+        cancel event

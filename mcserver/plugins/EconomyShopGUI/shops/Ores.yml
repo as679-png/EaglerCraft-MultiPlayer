@@ -97,3 +97,8 @@ pages:
         material: REDSTONE_BLOCK
         buy: 33.08
         sell: 8.27
+      '25':
+        material: RAW_COPPER
+        buy: 50.0
+        sell: 40.0
+        stack-size: 21

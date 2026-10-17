@@ -1,0 +1,29 @@
+command /getghostboots [<player>]:
+    permission: op
+    trigger:
+        set {_t} to player
+        if arg-1 is set:
+            set {_t} to arg-1
+        give 1 diamond boots named "&f&lPHANTOM CLOAK BOOTS" to {_t}
+        set lore of {_t}'s tool to "&7&m--------------------------||&7Type: &f&lCustom Armor Skin||&7Rarity: &5&lMYTHIC||&f||&f&l[PASSIVE ABILITY]||&7» Automatically grants smoke vanish||&7   and Speed III when low on health!||&7&m--------------------------"
+        send "&f[Special Items] &aYou received the Phantom Cloak Boots!" to {_t}
+
+on damage:
+    if victim is a player:
+        # Check if the player is currently wearing the custom boots
+        if name of victim's boots is "&f&lPHANTOM CLOAK BOOTS":
+            # Triggers if the damage brings them under 3 full hearts (6 HP)
+            if health of victim is less than 6:
+                set {_w} to difference between {cloak::cooldown::%victim's uuid%} and now
+                if {_w} is less than 45 seconds:
+                    stop
+                set {cloak::cooldown::%victim's uuid%} to now
+                
+                # Active emergency stealth mechanics
+                apply invisibility 1 to victim for 5 seconds
+                apply speed 3 to victim for 5 seconds
+                
+                set {_loc} to location of victim
+                execute console command "particle cloud %x-coord of {_loc}% %y-coord of {_loc}% %z-coord of {_loc}% 1 1 1 0.1 40"
+                execute console command "playsound mob.ghast.fireball %victim%"
+                send "&f&l[PHANTOM ESCAPE] &7You vanished into a cloud of smoke!" to victim

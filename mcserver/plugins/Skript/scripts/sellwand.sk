@@ -1,0 +1,20 @@
+command /getsellwand [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+            
+        give 1 blaze rod named "&e&lSELL WAND &7[Infinite]" to {_target}
+        set durability of {_target}'s tool to 5
+        set lore of {_target}'s tool to "&7&m--------------------------||&7Type: &e&lCustom Economy Utility||&7Rarity: &5&lMYTHIC||&f||&e&l[SPECIAL ABILITY]||&7» Right-click a chest to sell||&7   all items inside instantly.||&7&m--------------------------"
+        send "&e[Special Items] &aYou received the Sell Wand!" to {_target}
+
+# Triggers smoothly upon right-clicking a chest container block
+on right click on chest:
+    if name of player's tool is "&e&lSELL WAND &7[Infinite]":
+        cancel event
+        
+        # 1. Force the server's backend console to execute EconomyShopGUI's core menu function
+        # This opens the official empty drop inventory where items are instantly calculated and processed
+        make player execute command "sellgui"

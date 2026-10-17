@@ -1,0 +1,56 @@
+command /getgodset:
+    permission: op
+    trigger:
+        # 1. Give the Helmet
+        give 1 diamond helmet named "&5&lGodly Crown" to player
+        enchant player's tool with protection 5
+        enchant player's tool with unbreaking 4
+        enchant player's tool with respiration 3
+        set lore of player's tool to "&5&oArmor of the Gods||&7Grants Permanent Night Vision.||&d[Full Set Bonus Active When Complete]"
+        
+        # 2. Give the Chestplate
+        give 1 diamond chestplate named "&5&lGodly Aegis" to player
+        enchant player's tool with protection 5
+        enchant player's tool with unbreaking 4
+        set lore of player's tool to "&5&oArmor of the Gods||&7Grants +4 Permanent Absorption Hearts.||&d[Full Set Bonus Active When Complete]"
+        
+        # 3. Give the Leggings
+        give 1 diamond leggings named "&5&lGodly Greaves" to player
+        enchant player's tool with protection 5
+        enchant player's tool with unbreaking 4
+        set lore of player's tool to "&5&oArmor of the Gods||&7Grants Permanent Resistance II.||&d[Full Set Bonus Active When Complete]"
+        
+        # 4. Give the Boots
+        give 1 diamond boots named "&5&lGodly Treads" to player
+        enchant player's tool with protection 5
+        enchant player's tool with unbreaking 4
+        enchant player's tool with feather falling 4
+        set lore of player's tool to "&5&oArmor of the Gods||&7Grants Permanent Jump Boost II.||&d[Full Set Bonus Active When Complete]"
+        
+        send "&5&l[God Armor] &aYou have received the complete OP God Set!" to player
+
+# =========================================================================
+# ARMOR EFFECTS & FULL SET BONUS
+# =========================================================================
+every 2 seconds:
+    loop all players:
+        # Individual Piece Passive Buffs
+        if name of loop-player's helmet is "&5&lGodly Crown":
+            apply night vision 1 to loop-player for 15 seconds
+            
+        if name of loop-player's leggings is "&5&lGodly Greaves":
+            apply resistance 2 to loop-player for 5 seconds
+            
+        if name of loop-player's boots is "&5&lGodly Treads":
+            apply jump boost 2 to loop-player for 5 seconds
+
+on damage:
+    # Check if the player is wearing all four custom pieces for full immunity
+    if name of victim's helmet is "&5&lGodly Crown":
+        if name of victim's chestplate is "&5&lGodly Aegis":
+            if name of victim's leggings is "&5&lGodly Greaves":
+                if name of victim's boots is "&5&lGodly Treads":
+                    
+                    # Completely blocks fire, lava, and fall damage
+                    if damage cause is fall, lava, fire or burning:
+                        cancel event

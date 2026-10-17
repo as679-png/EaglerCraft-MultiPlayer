@@ -1,0 +1,51 @@
+# =========================================================================
+# COMMAND: GIVE THE MOB LAUNCHER TOOL
+# =========================================================================
+command /getmoblauncher [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+            
+        give 1 blaze rod named "&d&lMOB LAUNCHER" to {_target}
+        
+        # 1.8.8 Custom Skin Durability Hook
+        set durability of {_target}'s tool to 5
+        
+        set lore of {_target}'s tool to "&7&m--------------------------||&7Type: &d&lCustom Weapon Skin||&7Rarity: &5&lMYTHIC||&f||&d&l[SPECIAL ABILITY]||&7» Right-click a mob or player||&7   to launch them into the sky!||&7» &b&lINFINITE DURABILITY||&7&m--------------------------"
+        send "&d[Special Items] &aYou received the Mob Launcher!" to {_target}
+
+# =========================================================================
+# ENGINE: MOB LAUNCH MECHANICS (Triggers on Right-Clicking Mobs/Players)
+# =========================================================================
+on right click on an entity:
+    if name of player's tool is "&d&lMOB LAUNCHER":
+        cancel event
+        
+        # 1. Cooldown System (Fixed UUID future-proofing warning)
+        set {_waited} to difference between {moblauncher::cooldown::%player's uuid%} and now
+        if {_waited} is less than 2 seconds:
+            send "&c&l[COOLDOWN] &7Launcher is reloading! Wait %difference between 2 seconds and {_waited}%." to player
+            stop
+            
+        set {moblauncher::cooldown::%player's uuid%} to now
+        
+        # 2. Extract safe target tracking pointers
+        set {_loc} to location of event-entity
+        
+        # 3. Native 1.8.8 text physics engine launches the target straight up
+        push event-entity up with force 2.5
+        
+        # 4. Fire particles and play vanilla wither launcher audio chimes cleanly
+        execute console command "particle cloud %x-coord of {_loc}% %y-coord of {_loc}% %z-coord of {_loc}% 0.5 0.5 0.5 0.1 30"
+        execute console command "playsound mob.wither.shoot %player% %x-coord of {_loc}% %y-coord of {_loc}% %z-coord of {_loc}% 1.0 1.2"
+        
+        send "&d&l[LAUNCHED] &fSent target flying sky high!" to player
+
+# =========================================================================
+# PROTECTION LAYER: Lock Custom Durability Texture State
+# =========================================================================
+on item damage:
+    if name of player's tool is "&d&lMOB LAUNCHER":
+        cancel event

@@ -1,0 +1,46 @@
+command /getvampiresword [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+            
+        give 1 diamond sword named "&4&lVAMPIRE BLADE" to {_target}
+        set durability of {_target}'s tool to 5
+        enchant {_target}'s tool with sharpness 5
+        enchant {_target}'s tool with unbreaking 3
+        set lore of {_target}'s tool to "&7&m--------------------------||&7Type: &c&lCustom Weapon Skin||&7Rarity: &5&lMYTHIC||&f||&4&l[SPECIAL ABILITY]||&7» Steals lifeforce to gain up||&7   to 20 maximum hearts!||&7&m--------------------------"
+        send "&4[Special Items] &aYou received the lifestealing Vampire Blade!" to {_target}
+
+on damage:
+    if attacker is a player:
+        if name of attacker's tool is "&4&lVAMPIRE BLADE":
+            
+            # 1. Capture the attacker's current max health limits
+            set {_max} to attacker's max health
+            set {_current} to attacker's health
+            
+            # 2. Overhealing Calculation (Caps strictly at 40 health points / 20 full red hearts)
+            if {_current} is greater than or equal to {_max}:
+                if {_max} is less than 40:
+                    # Bump their max health bar attribute up by 1 full heart container (2 points)
+                    add 2 to attacker's max health
+                    heal the attacker by 2
+                    send "&4&l[OVERHEAL] &cMax Health Increased! (%attacker's max health / 2% Hearts)" to attacker
+                else:
+                    # Player is already at the maximum 20-heart ceiling layer cap
+                    send "&4&l[MAXED] &7Your vampiric lifesteal is completely maxed out!" to attacker
+            else:
+                # Regular fallback healing if they are currently damaged underneath their active max health bar
+                heal the attacker by 2
+                send "&4&l[VAMPIRISM] &c+1 Heart Stolen!" to attacker
+                
+            # 3. Spawn blood particle visuals right on the user
+            play mobspawner flames at attacker
+
+# =========================================================================
+# SAFETY RESET ENGINE: Restores normal 10 hearts back upon player death
+# =========================================================================
+on death of player:
+    # Safely resets their heart containers back to the vanilla 10 rows (20 points) upon dying
+    set victim's max health to 20

@@ -1,0 +1,114 @@
+command /getgodswrath [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+        
+        set {_i} to nether star named "&c&lGOD'S WRATH"
+        set lore of {_i} to "&d&oThe Ultimate Catalyst||&7Sneak + Right-Click to &eSwitch Modes&7.||&7Left or Right-Click to execute power."
+        give {_i} to {_target}
+        send "&e[!] You have been granted &c&lGod's Wrath&e!" to {_target}
+
+on rightclick:
+    if name of player's tool is "&c&lGOD'S WRATH":
+        if player is sneaking:
+            cancel event
+            
+            if {godswrath::list::*} is not set:
+                add "Shard Pickaxe" to {godswrath::list::*}
+                add "Shard Shovel" to {godswrath::list::*}
+                add "Greataxe" to {godswrath::list::*}
+                add "Rageaxe" to {godswrath::list::*}
+                add "Thunderaxe" to {godswrath::list::*}
+                add "Vampire Sword" to {godswrath::list::*}
+                add "Void Cleave" to {godswrath::list::*}
+                add "Shockwave" to {godswrath::list::*}
+                add "Mob Launcher" to {godswrath::list::*}
+                add "Mob Summoner" to {godswrath::list::*}
+                add "Sell Wand" to {godswrath::list::*}
+                add "Harvester Hoe" to {godswrath::list::*}
+
+            if {godswrath::current::%player's uuid%} is not set:
+                set {godswrath::current::%player's uuid%} to 1
+            else:
+                add 1 to {godswrath::current::%player's uuid%}
+                if {godswrath::current::%player's uuid%} > size of {godswrath::list::*}:
+                    set {godswrath::current::%player's uuid%} to 1
+                    
+            set {_index} to {godswrath::current::%player's uuid%}
+            set {_power} to {godswrath::list::%{_index}%}
+            
+            send action bar "&aMode: &d&l%{_power}%" to player
+            execute console command "playsound random.orb %player% ~ ~ ~ 0.5 1.5"
+
+on break:
+    if name of player's tool is "&c&lGOD'S WRATH":
+        set {_index} to {godswrath::current::%player's uuid%}
+        set {_power} to {godswrath::list::%{_index}%}
+        
+        if {_power} is "Shard Pickaxe":
+            godsWrathShardPick(player, event-block)
+        else if {_power} is "Shard Shovel":
+            godsWrathShardShovel(player, event-block)
+        else if {_power} is "Greataxe":
+            godsWrathGreataxe(player, event-block)
+        else if {_power} is "Harvester Hoe":
+            godsWrathHarvester(player, event-block)
+
+on rightclick:
+    if name of player's tool is "&c&lGOD'S WRATH":
+        if player is not sneaking:
+            set {_index} to {godswrath::current::%player's uuid%}
+            set {_power} to {godswrath::list::%{_index}%}
+            
+            play mobspawner flames at player
+            
+            if {_power} is "Mob Launcher":
+                godsWrathMobLaunch(player)
+            else if {_power} is "Mob Summoner":
+                godsWrathMobSummon(player)
+            else if {_power} is "Sell Wand":
+                if clicked block is set:
+                    godsWrathSellWand(player, clicked block)
+            else if {_power} is "Thunderaxe":
+                godsWrathThunder(player)
+
+on damage:
+    if name of attacker's tool is "&c&lGOD'S WRATH":
+        set {_index} to {godswrath::current::%attacker's uuid%}
+        set {_power} to {godswrath::list::%{_index}%}
+        
+        if {_power} is "Vampire Sword":
+            godsWrathVampire(attacker, victim)
+        else if {_power} is "Rageaxe":
+            godsWrathRage(attacker, victim)
+        else if {_power} is "Void Cleave":
+            godsWrathVoid(attacker, victim)
+        else if {_power} is "Shockwave":
+            godsWrathShockwave(attacker, victim)
+
+function godsWrathShardPick(p: player, b: block):
+    stop
+function godsWrathShardShovel(p: player, b: block):
+    stop
+function godsWrathGreataxe(p: player, b: block):
+    stop
+function godsWrathHarvester(p: player, b: block):
+    stop
+function godsWrathMobLaunch(p: player):
+    stop
+function godsWrathMobSummon(p: player):
+    stop
+function godsWrathSellWand(p: player, b: block):
+    stop
+function godsWrathThunder(p: player):
+    stop
+function godsWrathVampire(a: entity, v: entity):
+    stop
+function godsWrathRage(a: entity, v: entity):
+    stop
+function godsWrathVoid(a: entity, v: entity):
+    stop
+function godsWrathShockwave(a: entity, v: entity):
+    stop

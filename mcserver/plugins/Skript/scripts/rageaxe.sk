@@ -1,0 +1,34 @@
+command /getrageaxe [<player>]:
+    permission: op
+    trigger:
+        set {_t} to player
+        if arg-1 is set:
+            set {_t} to arg-1
+        give 1 diamond axe named "&c&lBLOODLUST BATTLEAXE" to {_t}
+        set durability of {_t}'s tool to 5
+        enchant {_t}'s tool with sharpness 5
+        set lore of {_t}'s tool to "&7&m--------------------------||&7Type: &c&lCustom Axe Skin||&7Rarity: &5&lMYTHIC||&f||&c&l[SPECIAL ABILITY]||&7» Landing consecutive hits grants||&7   stacking Speed & Strength buffs!||&7» &b&lINFINITE DURABILITY||&7&m--------------------------"
+
+on damage:
+    if attacker is a player:
+        if name of attacker's tool is "&c&lBLOODLUST BATTLEAXE":
+            # Check if they have an active combat combo loop going
+            set {_combo::%attacker's uuid%} to 0 if {_combo::%attacker's uuid%} is not set
+            add 1 to {_combo::%attacker's uuid%}
+            
+            if {_combo::%attacker's uuid%} is 1:
+                apply speed 1 to attacker for 6 seconds
+                send "&c&l[RAGE STACK 1] &7Feeling light on your feet..." to attacker
+            else if {_combo::%attacker's uuid%} is 2:
+                apply speed 2 to attacker for 6 seconds
+                apply strength 1 to attacker for 6 seconds
+                send "&c&l[RAGE STACK 2] &cAdrenaline is kicking in!" to attacker
+            else if {_combo::%attacker's uuid%} is greater than or equal to 3:
+                apply speed 3 to attacker for 6 seconds
+                apply strength 2 to attacker for 6 seconds
+                send "&4&l[MAX RAGE] &4YOU HAVE ENTERED AN UNSTOPPABLE FURY!" to attacker
+                execute console command "playsound mob.wolf.growl %attacker%"
+
+on item damage:
+    if name of player's tool is "&c&lBLOODLUST BATTLEAXE":
+        cancel event

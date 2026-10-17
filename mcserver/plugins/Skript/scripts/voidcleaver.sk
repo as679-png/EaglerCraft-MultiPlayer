@@ -1,0 +1,37 @@
+command /getvoidcleaver [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+            
+        give 1 diamond sword named "&d&lVOID CLEAVER" to {_target}
+        
+        # 1.8.8 Custom Skin Durability Hook
+        set durability of {_target}'s tool to 5
+        
+        enchant {_target}'s tool with sharpness 5
+        enchant {_target}'s tool with unbreaking 3
+        set lore of {_target}'s tool to "&7&m--------------------------||&7Type: &d&lCustom Weapon Skin||&7Rarity: &5&lMYTHIC||&f||&d&l[SPECIAL ABILITY]||&7» Right-click to fling a teleport pearl.||&7» &b&lINFINITE DURABILITY||&7&m--------------------------"
+
+# Triggers the instant they right-click holding the sword
+on right click:
+    if name of player's tool is "&d&lVOID CLEAVER":
+        cancel event
+        
+        # Cooldown management system to stop player spam crashes
+        set {_waited} to difference between {voidcleaver::cooldown::%player%} and now
+        if {_waited} is less than 4 seconds:
+            send "&c&l[COOLDOWN] &7Void warp is recharging! Wait %difference between 4 seconds and {_waited}%." to player
+            stop
+            
+        set {voidcleaver::cooldown::%player%} to now
+        
+        # Natively launches an ender pearl vector straight from their eye view
+        shoot an ender pearl from player at speed 1.5
+        execute console command "playsound mob.endermen.portal %player%"
+
+# Lock custom durability texture state
+on item damage:
+    if name of player's tool is "&d&lVOID CLEAVER":
+        cancel event

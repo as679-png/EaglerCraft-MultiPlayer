@@ -1,0 +1,24 @@
+command /getdetector [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+            
+        set {_item} to nether star named "&b&lOre Radar"
+        set lore of {_item} to "&d&oSpecial Exploration Utility||&7Hold this in your hand to||&7automatically detect nearby Diamonds!"
+        
+        give 1 of {_item} to {_target}
+
+every 3 seconds:
+    loop all players:
+        if name of loop-player's tool is "&b&lOre Radar":
+            set {_loc} to location of loop-player
+            
+            loop blocks in radius 2 around {_loc}:
+                if loop-block is diamond ore:
+                    send "&b&l[Radar] &3*PING!* A Diamond Ore is nearby!" to loop-player
+                    
+                    # FIXED FOR 1.8.8 LOOP COMPATIBILITY
+                    play sound "note.pling" to loop-player
+                    stop

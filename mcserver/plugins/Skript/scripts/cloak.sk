@@ -1,0 +1,32 @@
+command /getcloak [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+            
+        set {_item} to leather chestplate named "&8&lCloak of Shadows"
+        set lore of {_item} to "&d&oSpecial Defense Armor||&7Sneak to vanish completely||&7into the shadows for 6 seconds."
+        
+        # Dye the leather chestplate black automatically
+        dye {_item} black
+        give 1 of {_item} to {_target}
+
+on sneak toggle:
+    if player is sneaking:
+        if name of player's chestplate is "&8&lCloak of Shadows":
+            # Cooldown check
+            set {_waited} to difference between {cooldown::%player's uuid%::cloak} and now
+            if {_waited} is less than 15 seconds:
+                send "&cShadow Cloak recharging... Wait %difference between 15 seconds and {_waited}%!" to player
+                stop
+                
+            set {cooldown::%player's uuid%::cloak} to now
+            
+            # Apply invisibility and speed mechanics
+            apply invisibility 1 to player for 6 seconds
+            apply speed 2 to player for 6 seconds
+            
+            # Play a cool smoke effect and sound directly at the player
+            execute console command "playsound random.fizz %player% ~ ~ ~ 0.8 0.5"
+            send "&8&o* You vanish into the shadows... *" to player

@@ -1,0 +1,52 @@
+command /getsingularity [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+        set {_item} to coal block named "&0&lSingularity Core"
+        set lore of {_item} to "&d&oSpecial Chaos Utility||&c&lWARNING: &7Place this onto the||&7ground to bore a massive hole||&7all the way down to bedrock."
+        give 1 of {_item} to {_target}
+
+on place of coal block:
+    if display name of player's tool is "&0&lSingularity Core":
+        
+        set {_loc} to location of event-block
+        set block at {_loc} to air
+        
+        broadcast "&0&l[Singularity] &cA void drill has opened at %{_loc}%..."
+        execute console command "playsound ambient.weather.thunder %player% ~ ~ ~ 1 0.5"
+
+        # Determine how deep to loop based on current height down to bedrock
+        set {_currentY} to y-coordinate of {_loc}
+        set {_blocksDown} to {_currentY} - 1
+
+        # FIXED FOR 1.8.8: Create our own custom loop layer counter
+        set {_count} to 0
+
+        # Drill down floor-by-floor
+        loop {_blocksDown} times:
+            # Clear a 3x3 plane at the current level
+            set block 1 north of {_loc} to air
+            set block 1 south of {_loc} to air
+            set block 1 east of {_loc} to air
+            set block 1 west of {_loc} to air
+            set block 1 northeast of {_loc} to air
+            set block 1 northwest of {_loc} to air
+            set block 1 southeast of {_loc} to air
+            set block 1 southwest of {_loc} to air
+            set block at {_loc} to air # Center block
+            
+            # FIXED FOR 1.8.8: Increment counter and play sound every 5 blocks down
+            add 1 to {_count}
+            if {_count} is greater than or equal to 5:
+                set {_count} to 0
+                execute console command "playsound random.explode %player% ~ ~ ~ 0.3 0.5"
+                
+            # Move our scanning plane 1 block lower
+            subtract 1 from y-coordinate of {_loc}
+            
+            # Wait 1 tick between layers so it looks like an active drilling animation and prevents server lag
+            wait 1 tick
+            
+        broadcast "&0&l[Singularity] &aThe void drill hit bedrock and stabilized."

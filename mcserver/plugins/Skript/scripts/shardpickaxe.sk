@@ -1,0 +1,66 @@
+command /getshardpick [<player>]:
+    permission: op
+    trigger:
+        # Fallback check: if no player argument is specified, target the user who typed it
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+        
+        # Create the custom item template with high-tier unsafe enchantments
+        set {_item} to diamond pickaxe named "&bShard Pickaxe" with lore "&d&oSpecial Shard Tool||&7Mines a flat 3x3 plane."
+        enchant {_item} with efficiency 25
+        enchant {_item} with fortune 25
+        enchant {_item} with unbreaking 3
+        enchant {_item} with mending 1
+        
+        # Give exactly one copy of the fully customized item to the target player
+        give {_item} to {_target}
+
+on break:
+    if name of player's tool is "&bShard Pickaxe":
+        if {_mining::%player's uuid%} is true:
+            stop
+        set {_mining::%player's uuid%} to true
+        set {_b} to event-block
+        
+        if player's pitch is between -90 and -45:
+            break block 1 north of {_b} naturally
+            break block 1 northeast of {_b} naturally
+            break block 1 northwest of {_b} naturally
+            break block 1 east of {_b} naturally
+            break block 1 west of {_b} naturally
+            break block 1 south of {_b} naturally
+            break block 1 southeast of {_b} naturally
+            break block 1 southwest of {_b} naturally
+                        
+        else if player's pitch is between 45 and 90:
+            break block 1 north of {_b} naturally
+            break block 1 northeast of {_b} naturally
+            break block 1 northwest of {_b} naturally
+            break block 1 east of {_b} naturally
+            break block 1 west of {_b} naturally
+            break block 1 south of {_b} naturally
+            break block 1 southeast of {_b} naturally
+            break block 1 southwest of {_b} naturally
+                    
+        else if player's horizontal facing is north or south:
+            break block 1 above {_b} naturally
+            break block 1 northeast of block 1 above {_b} naturally
+            break block 1 northwest of block 1 above {_b} naturally
+            break block 1 east of {_b} naturally
+            break block 1 west of {_b} naturally
+            break block 1 below {_b} naturally
+            break block 1 northeast of block 1 below {_b} naturally
+            break block 1 northwest of block 1 below {_b} naturally
+                    
+        else if player's horizontal facing is east or west:
+            break block 1 above {_b} naturally
+            break block 1 northeast of block 1 above {_b} naturally
+            break block 1 northwest of block 1 above {_b} naturally
+            break block 1 north of {_b} naturally
+            break block 1 south of {_b} naturally
+            break block 1 below {_b} naturally
+            break block 1 northeast of block 1 below {_b} naturally
+            break block 1 northwest of block 1 below {_b} naturally
+                    
+        clear {_mining::%player's uuid%}

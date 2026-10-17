@@ -1,0 +1,22 @@
+command /getgreataxe [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+        set {_i} to diamond axe named "&6Lumberjack's Greataxe"
+        enchant {_i} with efficiency 5
+        set lore of {_i} to "&d&oFeller of Forests||&7Chops down entire trees at once."
+        give {_i} to {_target}
+
+on break:
+    if name of player's tool is "&6Lumberjack's Greataxe":
+        if event-block is any log:
+            set {_b} to event-block
+            # Loops up to 15 blocks directly above the broken log to fell the tree
+            loop 15 times:
+                set {_b} to block 1 above {_b}
+                if {_b} is any log:
+                    break {_b} naturally
+                else:
+                    stop

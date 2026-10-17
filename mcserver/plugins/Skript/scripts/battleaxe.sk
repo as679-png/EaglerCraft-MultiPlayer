@@ -1,0 +1,40 @@
+command /getbattleaxe [<player>]:
+    permission: op
+    trigger:
+        set {_target} to player
+        if arg-1 is set:
+            set {_target} to arg-1
+            
+        set {_item} to diamond axe named "&6&lShockwave Battleaxe"
+        set lore of {_item} to "&d&oSpecial Combat Tool||&7Right-click to slam the ground||&7and damage all nearby enemies."
+        
+        give 1 of {_item} to {_target}
+
+on right click:
+    if name of player's tool is "&6&lShockwave Battleaxe":
+        set {_waisted} to difference between {cooldown::%player's uuid%::axe} and now
+        if {_waisted} is less than 8 seconds:
+            send "&cAxe skill on cooldown: %difference between 8 seconds and {_waisted}%!" to player
+            stop
+            
+        set {cooldown::%player's uuid%::axe} to now
+        
+        # Ground slam visual effect
+        execute console command "playsound ambient.weather.thunder %player% ~ ~ ~ 1 1"
+        
+        # Loop entities inside a tiny local box around the attacker
+        loop all entities in radius 4 around player:
+            # Make sure we don't accidentally attack animals, armor stands, or ourselves!
+            if loop-entity is a player or a zombie or a skeleton or a spider:
+                if loop-entity is not player:
+                    
+                    # Deal direct magical damage bypassing armor defenses
+                    damage loop-entity by 3 hearts
+                    
+                    # VANILLA 1.8 PHYSICS ENGINE FALLBACK
+                    execute console command "execute %loop-entity% ~ ~ ~ summon Creeper ~ ~ ~ {ExplosionRadius:1,Fuse:0,Silent:1b}"
+                    
+                    # If it's a real player, disorient their screen with a nausea effect
+                    if loop-entity is a player:
+                        apply confusion 1 to loop-entity for 4 seconds
+                        send "&cYou were struck by %player%'s shockwave!" to loop-entity

@@ -943,3 +943,13 @@ pages:
         material: YELLOW_WOOL
         buy: 29.4
         sell: 7.35
+      '249':
+        material: COBBLESTONE
+        buy: 10.0
+        sell: 2.0
+        stack-size: 64
+      '250':
+        material: 1.17 RAW_COPPER
+        buy: 250
+        sell: 200
+        stack-size: 64

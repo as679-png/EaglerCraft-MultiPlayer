@@ -1,3 +1,6 @@
+# This file contains your custom command aliases for your Paper server.
+# Ensure you do not add multiple conflicting commands under a single alias word.
+
 aliases:
   applymoney:
   - eco give $1-
@@ -11,6 +14,8 @@ aliases:
   - essentials:kit pvp $1-
   sell:
   - economyshopgui:sellgui $1-
+  - economyshopgui:sellall $1-
+  sellall:
   - economyshopgui:sellall $1-
   sethome:
   - sethomegui:sethome $1-

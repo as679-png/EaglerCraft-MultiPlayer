@@ -1,0 +1,65 @@
+command /spinwheel:
+    trigger:
+        if {has_spun::%player%} is true:
+            send "&c&l[LUCKY WHEEL] &7You have already used your lifetime spin!" to player
+            stop
+            
+        set {has_spun::%player%} to true
+        send "&5&m----------------------------------------" to player
+        send "&5&l⭐ LUCKY ITEM WHEEL ⭐ &dSpinning your reward..." to player
+        send "&5&m----------------------------------------" to player
+        
+        loop 10 times:
+            set {_rand} to a random integer between 1 and 6
+            if {_rand} is 1:
+                send "&d&l» &b&lSHARD PICKAXE &d&l«" to player
+            else if {_rand} is 2:
+                send "&d&l» &6&lSHOCKWAVE BOW &d&l«" to player
+            else if {_rand} is 3:
+                send "&d&l» &4&lVAMPIRE BLADE &d&l«" to player
+            else if {_rand} is 4:
+                send "&d&l» &e&lARES THUNDER AXE &d&l«" to player
+            else if {_rand} is 5:
+                send "&d&l» &e&lSELL WAND &d&l«" to player
+            else if {_rand} is 6:
+                send "&d&l» &b&lTACTICAL SWITCHER &d&l«" to player
+                
+            execute console command "playsound random.click %player%"
+            
+            if loop-integer is less than 5:
+                wait 3 ticks
+            else if loop-integer is between 5 and 8:
+                wait 6 ticks
+            else:
+                wait 12 ticks
+                
+        set {_final_prize} to a random integer between 1 and 6
+        
+        send "&5&m----------------------------------------" to player
+        if {_final_prize} is 1:
+            execute console command "getshardpick %player%"
+            broadcast "&5&l[LUCKY WHEEL] &b%player% &fjust won a &b&lShard Pickaxe&f!"
+        else if {_final_prize} is 2:
+            execute console command "getshockwavebow %player%"
+            broadcast "&5&l[LUCKY WHEEL] &b%player% &fjust won a &6&lShockwave Bow&f!"
+        else if {_final_prize} is 3:
+            execute console command "getvampiresword %player%"
+            broadcast "&5&l[LUCKY WHEEL] &b%player% &fjust won a &4&lVampire Blade&f!"
+        else if {_final_prize} is 4:
+            execute console command "getthunderaxe %player%"
+            broadcast "&5&l[LUCKY WHEEL] &b%player% &fjust won an &e&lAres Thunder Axe&f!"
+        else if {_final_prize} is 5:
+            execute console command "getsellwand %player%"
+            broadcast "&5&l[LUCKY WHEEL] &b%player% &fjust won a &e&lSell Wand&f!"
+        else if {_final_prize} is 6:
+            execute console command "getswitcher %player%"
+            broadcast "&5&l[LUCKY WHEEL] &b%player% &fjust won a &b&lTactical Switcher&f!"
+        send "&5&m----------------------------------------" to player
+            
+        execute console command "playsound mob.enderdragon.growl %player%"
+
+command /resetspin <player>:
+    permission: op
+    trigger:
+        set {has_spun::%arg-1%} to false
+        send "&d&l[ADMIN] &aReset lucky wheel status for &f%arg-1%&a!" to player
